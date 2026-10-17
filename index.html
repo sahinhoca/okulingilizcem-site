@@ -12,11 +12,13 @@
     html{scroll-behavior:smooth}
     body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--dark);background:#f3f9ff;line-height:1.6}
     a{color:inherit}
+    img{max-width:100%;display:block}
     .wrap{width:min(1080px,calc(100% - 40px));margin:auto}
     header{background:#fff;border-bottom:1px solid var(--line)}
     .nav{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:18px}
     .logo{font-size:1.19rem;font-weight:850;display:flex;align-items:center;gap:10px;letter-spacing:-.4px}
-    .logo-ico{display:grid;place-items:center;width:41px;height:41px;border-radius:13px;background:#e5f4ff;font-size:25px}
+    .logo-ico{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:#e5f4ff;overflow:hidden;flex:0 0 auto;border:1px solid #cfe8fb}
+    .logo-ico img{width:100%;height:100%;object-fit:cover;object-position:center}
     nav a{text-decoration:none;color:var(--muted);font-size:.91rem;font-weight:650;margin-left:22px}
     nav a:hover{color:#1673b6}
     .hero{background:linear-gradient(145deg,#2b91dd 0%,#59a9ed 60%,#82c8f5 100%);color:white;padding:88px 0 94px;overflow:hidden}
@@ -26,7 +28,8 @@
     .hero p{font-size:1.15rem;max-width:610px;color:#f4fbff;margin:0 0 28px}
     .button{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:14px;font-weight:800;padding:14px 24px;background:white;color:#1473b6;box-shadow:0 10px 28px #12588c44;transition:transform .2s}
     .button:hover{transform:translateY(-2px)}
-    .mascot{background:#ffffff24;border:2px solid #ffffff70;border-radius:34px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:clamp(7rem,21vw,15rem);box-shadow:0 18px 60px #165f9c29;transform:rotate(3deg)}
+    .mascot{background:#ffffff1f;border:2px solid #ffffff66;border-radius:34px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;padding:28px;box-shadow:0 18px 60px #165f9c29;transform:rotate(3deg)}
+    .mascot img{width:min(100%,360px);height:auto;filter:drop-shadow(0 14px 35px rgba(0,0,0,.12))}
     section{padding:72px 0}
     .section-title{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-1px;margin:0 0 9px}
     .section-sub{color:var(--muted);margin:0 0 34px;font-size:1.03rem}
@@ -45,7 +48,7 @@
 <body>
   <header>
     <div class="wrap nav">
-      <div class="logo"><span class="logo-ico" aria-hidden="true">🐼</span> Okul İngilizcem</div>
+      <div class="logo"><span class="logo-ico" aria-hidden="true"><img src="panda.png" alt=""></span> Okul İngilizcem</div>
       <nav aria-label="Ana menü"><a href="#etkinlikler">Etkinlikler</a><a href="#hakkinda">Hakkında</a></nav>
     </div>
   </header>
@@ -58,7 +61,7 @@
           <p>Okul İngilizcem ile kelimeler öğren, dinleme ve yazma etkinlikleri yap, oyun oynayarak İngilizceni geliştir.</p>
           <a class="button" href="https://play.google.com/store/search?q=Okul%20%C4%B0ngilizcem&amp;c=apps" target="_blank" rel="noopener noreferrer">Google Play'de Bul ↗</a>
         </div>
-        <div class="mascot" role="img" aria-label="Panda maskotu">🐼</div>
+        <div class="mascot" role="img" aria-label="Okul İngilizcem Tombik Panda maskotu"><img src="panda.png" alt="Okul İngilizcem Tombik Panda"></div>
       </div>
     </div>
     <section id="etkinlikler">
